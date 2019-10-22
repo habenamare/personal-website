@@ -1,0 +1,3 @@
+[submodule "themes/custom-hugo-theme"]
+	path = themes/custom-hugo-theme
+	url = https://github.com/habenamare/custom-hugo-theme.git
