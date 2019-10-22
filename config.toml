@@ -1,4 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Haben Amare"
 theme = "custom-hugo-theme"
+
+[params]
+  fullName = "Haben Amare"
