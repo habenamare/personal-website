@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Haben Amare"
-theme = "custom-hugo-theme"
+theme = "personal-website-theme"
 
 [params]
   fullName = "Haben Amare"
