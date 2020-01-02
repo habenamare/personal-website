@@ -5,3 +5,11 @@ theme = "custom-hugo-theme"
 
 [params]
   fullName = "Haben Amare"
+
+  [[params.navItems]]
+    title = "Home"
+    path = "/"
+
+  [[params.navItems]]
+    title = "Guides"
+    path = "/guides"
