@@ -13,3 +13,7 @@ theme = "personal-website-theme"
   [[params.navItems]]
     title = "Guides"
     path = "/guides"
+
+  [[params.navItems]]
+    title = "Projects"
+    path = "/projects"
