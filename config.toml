@@ -11,6 +11,10 @@ theme = "personal-website-theme"
     path = "/"
 
   [[params.navItems]]
+    title = "Articles"
+    path = "/articles"
+
+  [[params.navItems]]
     title = "Guides"
     path = "/guides"
 
