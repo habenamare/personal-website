@@ -21,3 +21,7 @@ theme = "personal-website-theme"
   [[params.navItems]]
     title = "Projects"
     path = "/projects"
+
+  [[params.navItems]]
+    title = "About"
+    path = "/about"
