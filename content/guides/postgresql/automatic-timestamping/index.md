@@ -14,15 +14,15 @@ title = "Automatic Timestamping"
 
 ```pl/pgsql
 CREATE TABLE users (
-  id         INT         NOT NULL,
+  id         SERIAL      PRIMARY KEY,
   full_name  TEXT        NOT NULL,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-)
+);
 ```
 
-- The `NOW()` function returns the start date and time of the current transaction
-  in `TIMESTAMPTZ` (timestamp with time zone).
+- The `NOW()` function returns the start date and time of the current
+  transaction in `TIMESTAMPTZ` (timestamp with time zone).
 
 {{< /guidesection >}}
 
@@ -34,8 +34,8 @@ CREATE OR REPLACE FUNCTION update_updated_at_column()
 RETURNS TRIGGER AS $$
   BEGIN
     --
-    -- Set the `updated_at` TIMESTAMPZ column with the start date and time of
-    -- the current transaction.
+    -- Set the `updated_at` TIMESTAMPZ column to the start date and time of the
+    -- current transaction.
     --
     NEW.updated_at = NOW();
     RETURN NEW;
@@ -55,5 +55,7 @@ CREATE TRIGGER tr_users_bu BEFORE UPDATE on users
 - The trigger is associated with the `users` table and will execute the
   `update_updated_at_column` function before an `UPDATE` operation is performed
   on the table.
+- Note that a trigger is executed in the same transaction as the triggering
+  action.
 
 {{< /guidesection >}}
