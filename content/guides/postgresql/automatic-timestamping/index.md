@@ -1,5 +1,6 @@
 +++
 title = "Automatic Timestamping"
+publishDate = "2020-01-28"
 
 [[links]]
   title = "Trigger Functions | PostgreSQL: Documentation: 12: 42.10"
