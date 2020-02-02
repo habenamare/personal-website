@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Haben Amare"
 theme = "personal-website-theme"
 
+[markup]
+  [markup.highlight]
+    style = "trac"
+
 [params]
   fullName = "Haben Amare"
 
