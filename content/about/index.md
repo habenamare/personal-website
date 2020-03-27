@@ -24,9 +24,6 @@ shortDescription = "I build products with clean code, and find great joy in the 
 [[skills]]
   skill = "Cloud"
   using = [ "Firebase" ]
-[[skills]]
-  skill = "Devops (research on term and using)"
-  using = [ "Docker", "podman", "Kubernetes" ]
 +++
 
 {{< selfdescription >}}
