@@ -11,7 +11,7 @@ publishDate = "2020-01-28"
 +++
 
 {{< guidesection >}}
-## 1. Setup the table schema
+## Setup the table schema
 
 ```pl/pgsql
 CREATE TABLE users (
@@ -28,7 +28,7 @@ CREATE TABLE users (
 {{< /guidesection >}}
 
 {{< guidesection >}}
-## 2. Create the trigger function
+## Create the trigger function
 
 ```pl/pgsql
 CREATE OR REPLACE FUNCTION update_updated_at_column()
@@ -47,7 +47,7 @@ $$ LANGUAGE plpgsql;
 {{< /guidesection >}}
 
 {{< guidesection >}}
-## 3. Create the trigger
+## Create the trigger
 ```pl/pgsql
 CREATE TRIGGER tr_users_bu BEFORE UPDATE on users
   FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
