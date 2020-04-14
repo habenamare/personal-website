@@ -2,6 +2,8 @@
 title = "Configuration File Locations"
 publishDate = "2020-02-03"
 
+tags = ["postgresql"]
+
 [[links]]
   title = "File Locations | PostgreSQL: Documentation: 12: 19.2"
   link = "https://www.postgresql.org/docs/12/runtime-config-file-locations.html"

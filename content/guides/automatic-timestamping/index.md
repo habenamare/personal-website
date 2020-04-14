@@ -2,6 +2,8 @@
 title = "Automatic Timestamping"
 publishDate = "2020-01-28"
 
+tags = ["postgresql"]
+
 [[links]]
   title = "Trigger Functions | PostgreSQL: Documentation: 12: 42.10"
   link = "https://www.postgresql.org/docs/12/plpgsql-trigger.html"
