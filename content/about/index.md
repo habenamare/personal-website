@@ -13,9 +13,6 @@ shortDescription = "I build products with clean code, and find great joy in the 
   link =  "https://gitlab.com/habenamare"
 
 [[skills]]
-  skill = "Front-end"
-  using = [ "VueJS" ]
-[[skills]]
   skill = "Back-end, APIs"
   using = [ "Go", "NodeJS", "Laravel"]
 [[skills]]
@@ -24,6 +21,9 @@ shortDescription = "I build products with clean code, and find great joy in the 
 [[skills]]
   skill = "Cloud"
   using = [ "Firebase" ]
+[[skills]]
+  skill = "Front-end"
+  using = [ "VueJS" ]
 +++
 
 {{< skills >}}
