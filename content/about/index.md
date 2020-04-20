@@ -11,6 +11,9 @@ shortDescription = "I build products with clean code, and find great joy in the 
 [[socialNetworks]]
   title = "Find me on GitLab"
   link =  "https://gitlab.com/habenamare"
+[[socialNetworks]]
+  title = "Find me on LinkedIn"
+  link =  "https://linkedin.com/in/haben"
 
 [[skills]]
   skill = "Back-end, APIs"
