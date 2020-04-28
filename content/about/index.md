@@ -6,13 +6,13 @@ profileImage = "/images/haben-750.jpg"
 shortDescription = "I build products with clean code, and find great joy in the process."
 
 [[socialNetworks]]
-  title = "Find me on Github"
+  title = "GitHub"
   link = "https://github.com/habenamare"
 [[socialNetworks]]
-  title = "Find me on GitLab"
+  title = "GitLab"
   link =  "https://gitlab.com/habenamare"
 [[socialNetworks]]
-  title = "Find me on LinkedIn"
+  title = "LinkedIn"
   link =  "https://linkedin.com/in/haben"
 
 [[skills]]
