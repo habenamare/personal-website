@@ -1,5 +1,5 @@
 +++
-title = "Automatic Timestamping"
+title = "Automatic Timestamping in PostgreSQL"
 publishDate = "2020-01-28"
 
 tags = ["postgresql"]

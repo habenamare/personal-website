@@ -1,5 +1,5 @@
 +++
-title = "Configuration File Locations"
+title = "PostgreSQL Configuration File Locations"
 publishDate = "2020-02-03"
 
 tags = ["postgresql"]
