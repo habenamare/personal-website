@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Haben Amare"
 theme = "personal-website-theme"
 
+enableGitInfo = true
+
 [markup]
   [markup.highlight]
     style = "trac"
