@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Test Hugo version
-          command: hugo --version
+          command: hugo version
       - run:
           name: Build
           command: make build
