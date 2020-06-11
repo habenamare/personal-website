@@ -10,13 +10,16 @@ jobs:
           name: Test Hugo version
           command: hugo version
       - run:
+          name: List files 0
+          command: |
+            ls -lah ./
+            ls -lah ./themes/personal-website-theme
+      - run:
           name: Build
           command: make build
       - run:
           name: List files
           command: |
-            ls -lah ./
-            ls -lah ./themes/personal-website-theme
             ls -lah ./public
       # - add_ssh_keys:
       #     fingerprints:
