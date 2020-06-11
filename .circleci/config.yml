@@ -1,0 +1,32 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: cibuilds/hugo:0.69
+    steps:
+      - checkout
+      - run:
+          name: Test Hugo version
+          command: hugo --version
+      - run:
+          name: Build
+          command: make build
+      - run:
+          name: List files
+          command: |
+            ls -lah ./themes/personal-website-theme
+            ls -lah ./public
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - ""
+      # - run:
+      #     name: Copy site via SSH
+      #     command: |
+      #       scp -r -o StrictHostKeyChecking=no ./public ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy
