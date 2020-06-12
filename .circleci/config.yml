@@ -22,11 +22,11 @@ jobs:
             - "be:f5:15:16:69:11:4b:0e:ee:25:0f:41:c8:1e:37:99"
       - run:
           name: Rename the generated public directory
-          command: mv public personal-website
+          command: mv public personal-website-new
       - run:
           name: Copy site via SSH
           command: |
-            scp -r -o StrictHostKeyChecking=no ./personal-website ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}
+            scp -r -o StrictHostKeyChecking=no ./personal-website-new ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}
       - run:
           name: Remove old site and rename the copied site
           command: |
