@@ -12,27 +12,27 @@ jobs:
             git submodule init
             git submodule update
       - run:
-          name: Test Hugo version
+          name: Check Hugo version
           command: hugo version
-      - run:
-          name: List files 0
-          command: |
-            ls -lah ./
-            ls -lah ./themes/personal-website-theme
       - run:
           name: Build
           command: make build
+      - add_ssh_keys:
+          fingerprints:
+            - "be:f5:15:16:69:11:4b:0e:ee:25:0f:41:c8:1e:37:99"
       - run:
-          name: List files
+          name: Rename the generated public directory
+          command: mv public personal-website
+      - run:
+          name: Copy site via SSH
           command: |
-            ls -lah ./public
-      # - add_ssh_keys:
-      #     fingerprints:
-      #       - ""
-      # - run:
-      #     name: Copy site via SSH
-      #     command: |
-      #       scp -r -o StrictHostKeyChecking=no ./public ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}
+            scp -r -o StrictHostKeyChecking=no ./personal-website ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}
+      - run:
+          name: Remove old site and rename the copied site
+          command: |
+            ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} \
+              "rm ${DEPLOY_PATH}/personal-website && \
+                mv ${DEPLOY_PATH}/personal-website-new ${DEPLOY_PATH}/personal-website"
 
 workflows:
   version: 2
