@@ -31,7 +31,7 @@ jobs:
           name: Remove old site and rename the copied site
           command: |
             ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} \
-              "rm ${DEPLOY_PATH}/personal-website && \
+              "rm -rf ${DEPLOY_PATH}/personal-website && \
                 mv ${DEPLOY_PATH}/personal-website-new ${DEPLOY_PATH}/personal-website"
 
 workflows:
