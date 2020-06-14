@@ -1,3 +1,3 @@
-# habenamare.com :construction:
+# habenamare.com
 
-This is the repository for my website that is being built with GoHugo.
+This is the repository for my website. It is built using [Hugo](https://gohugo.io) and [Bulma](https://bulma.io).
