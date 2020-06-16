@@ -10,7 +10,7 @@ jobs:
           name: Pull submodules
           command: |
             git submodule init
-            git submodule update
+            git submodule update --remote
       - run:
           name: Check Hugo version
           command: hugo version
