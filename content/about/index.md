@@ -19,7 +19,7 @@ shortDescription = "excited to build products with clean code"
   skill = "Back-end, APIs"
   using = [ "Go", "NodeJS", "Laravel"]
 [[skills]]
-  skill = "Databases, Database Design"
+  skill = "Databases"
   using = [ "PostgreSQL", "MySQL", "MongoDB" ]
 [[skills]]
   skill = "Cloud"
