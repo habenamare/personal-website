@@ -5,6 +5,8 @@ theme = "personal-website-theme"
 
 enableGitInfo = true
 
+googleAnalytics = "UA-170626379-1"
+
 [markup]
   [markup.highlight]
     style = "trac"
