@@ -23,7 +23,7 @@ shortDescription = "excited to build products with clean code"
   using = [ "PostgreSQL", "MySQL", "MongoDB" ]
 [[skills]]
   skill = "Cloud"
-  using = [ "Firebase" ]
+  using = [ "AWS", "Firebase" ]
 [[skills]]
   skill = "Front-end"
   using = [ "VueJS" ]
